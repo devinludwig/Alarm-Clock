@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="/css/main.css">
     <script src="build/js/vendor.min.js"></script>
     <script src="build/js/app.js"></script>
     <title>ALARM CLOCK</title>
@@ -12,15 +13,42 @@
       <div class="row">
         <div class="col-sm-6 col-sm-push-3 text-center">
           <h1>alarm clock</h1>
-          <div class="col-sm-4 col-sm-push-2 text-right">
+          <div class="col-sm-3 text-right">
+            <h1 id="day"></h1>
+          </div>
+          <div class="col-sm-2  text-right">
             <h1 id="hour"> :</h1>
           </div>
-          <div class="col-sm-4 col-sm-push-2 text-left">
+          <div class="col-sm-2 text-left">
             <h1 id="minute"></h1>
+          </div>
+          <div class="col-sm-2 ">
+            <h1 id="seconds"></h1>
+          </div>
+          <div class="col-sm-2">
+            <h1 id="ampm"></h1>
           </div>
         </div>
       </div>
-    </div>
+      <form class="form-grp" id="new-alarm">
+        <h3>Enter a time to set a new alarm:</h3>
+        <select  id="days" placeholder="day"></select>
+        <input type="number" id="alarm-hour" placeholder="Hour">
+        <input type="number" id="alarm-minute" placeholder="Minutes">
+        <button type="submit">Set Alarm</button>
+      </form>
+      <h3>Alarms:</h3>
+      <ul id="alarms">
 
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="alarm col-sm-6 col-sm-push-3">
+          <img src="https://media1.giphy.com/media/3o6ZsUk2bRRhmROuw8/200.gif#10">
+          <button id="alarm-off" type="button" class="btn btn-primary">OFF</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
