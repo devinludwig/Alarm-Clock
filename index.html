@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="build/css/vendor.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script src="build/js/app.js"></script>
     <title>ALARM CLOCK</title>
@@ -47,6 +47,16 @@
         <div class="alarm col-sm-6 col-sm-push-3">
           <img src="https://media1.giphy.com/media/3o6ZsUk2bRRhmROuw8/200.gif#10">
           <button id="alarm-off" type="button" class="btn btn-primary">OFF</button>
+        </div>
+        <div class="box col-sm-6 col-sm-push-3">
+            <h1>Get Weather Conditions From Anywhere!</h1>
+            <label for="location">Enter a location:</label>
+            <input id="location" type="text">
+            <button class="btn-success" id="weatherLocation">Get Current Humidity!</button>
+            <div class="showWeather"></div>
+            <div class="temperature"></div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
         </div>
       </div>
     </div>

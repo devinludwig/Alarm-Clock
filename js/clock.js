@@ -12,15 +12,10 @@ Clock.prototype.fuck = function() {
   var currentTime = moment();
   var _this = this;
   this.alarms.forEach(function(alarmTime) {
-    if (currentTime.format("dddd, H:mm") === alarmTime.format("dddd, H:mm"))  {
-      console.log("before:" + _this.alarm);
+    if (currentTime.format("dddd, h:mm") === alarmTime.format("dddd, h:mm"))  {
       _this.alarm = true;
-      console.log(this.alarm);
-      console.log("this: " + this);
-      // debugger;
-    }
+    )};
   });
-  console.log(this.alarm);
 };
 
 

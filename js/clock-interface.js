@@ -11,10 +11,10 @@ $(document).ready(function() {
 
     var timer = setInterval(function() {
       if (newClock.alarm === true) {
-        $(".alarm").show();
+        $("div.alarm").show();
       }
     newClock.day = moment().format("dddd");
-    newClock.hour = moment().format("H");
+    newClock.hour = moment().format("h");
     newClock.minute = moment().format("mm");
     newClock.second = moment().format("ss");
     newClock.ampm = moment().format("A");
@@ -39,6 +39,6 @@ $(document).ready(function() {
   $("#alarm-off").click(function() {
     newClock.alarm = false;
     $(".alarm").hide();
-  })
+  });
 
 });
