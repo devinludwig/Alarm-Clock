@@ -6,3 +6,13 @@ div.alarm {
   border: 3px solid black;
   padding: 40px 80px;
 }
+
+
+div.clock {
+  background-color: red;
+  div.row {
+    div.col-sm-6 {
+      font-size: 5rem;
+    }
+  }
+}
